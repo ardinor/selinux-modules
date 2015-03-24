@@ -2,11 +2,12 @@
 
 Various SELinux modules I've created as needed
 
-\*\* USE AT YOUR OWN RISK \*\*
+#### \*\* USE AT YOUR OWN RISK \*\* ####
 
-Logspout Module
+### [Logspout Module](logspout/) ###
 
 Logspout needs write access on the sock_file docker.sock and connectto access on the unix_stream_socket /run/docker.sock, the policy modules grant the required access.
+
 
 To manually compile and load a policy module (.te)
 
