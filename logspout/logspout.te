@@ -3,9 +3,14 @@ module logspout 1.0;
 
 require {
 	type docker_var_run_t;
+    type docker_t;
 	type svirt_lxc_net_t;
 	class sock_file write;
+    class unix_stream_socket connectto;
 }
 
 #============= svirt_lxc_net_t ==============
 allow svirt_lxc_net_t docker_var_run_t:sock_file write;
+
+#============= svirt_lxc_net_t ==============
+allow svirt_lxc_net_t docker_t:unix_stream_socket connectto;

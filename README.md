@@ -17,7 +17,3 @@ To manually compile and load a policy module (.te)
     semodule_package -o module.pp -m module.mod
     # Load the module
     semodule -i module.pp
-
-TO DO:
----------
-- Test combining the two Logspout policy modules
